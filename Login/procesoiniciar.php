@@ -2,7 +2,7 @@
 /*iniciarSesion.php*/
     session_start();
 
-    include_once('../Config/Conexion.php');
+    include_once('../config/Conexion.php');
 
     if(isset($_POST['Usuario']) && isset($_POST['Clave'])){
         function validate($data){
@@ -16,15 +16,12 @@
         $usuario = validate($_POST['Usuario']);
         $clave = validate($_POST['Clave']);
 
-        if(empty($usuario) && empty($clave)){
-            header("location: ../iniciarsesion.php?error=El usuario y la clave son requeridas");
+        if(empty($usuario)){
+            header("location: ../view/iniciarsesion.php?error=El usuario es requerido");
             exit();
         }elseif(empty($clave)){
-            header("location: ../iniciarsesion.php?error=La clave es requerida");
-            exit();            
-        }elseif(empty($usuario)){
-            header("location: ../iniciarsesion.php?error=El usuario es requerido");
-            exit();            
+            header("location: ../view/iniciarsesion.php?error=La clave es requerida");
+            exit();
         }else{
             /*$clave = password_hash($clave, PASSWORD_BCRYPT);*/
 
@@ -38,19 +35,19 @@
                     $_SESSION['user'] = $row['user'];
                     $_SESSION['nombre_completo'] = $row['nombre_completo'];
                     $_SESSION['correo'] = $row['correo'];
-                    header("location: ../inde.php");
+                    header("location: ../view/crud.php");
                     exit();
                 }else{
-                    header("location: ../iniciarsesion.php?error=El usuario o la clave son incorrectas");
+                    header("location: ../view/iniciarsesion.php?error=El usuario o la clave son incorrectas");
                     exit();
                 }
             }else{
-                header("location: ../iniciarsesion.php?error=El usuario o clave son inexistentes");
+                header("location: ../view/iniciarsesion.php?error=El usuario o clave son inexistentes");
                 exit();
             }
         }
     }else{
-        header("location: ../iniciarsesion.php");
+        header("location: ../view/iniciarsesion.php");
         exit();
     }
 ?>

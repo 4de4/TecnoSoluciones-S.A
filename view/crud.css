@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: rgb(206, 216, 236);
+    /*background: url('../img/fondo azul.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+/**/
+h2{
+    font-size: 50px;
+}
+.tablecliente{
+    background: violet;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tablecliente th{
+    font-size: 30px;
+}
+
+/*CABEZERA*/
+.cab{
+    padding: 10px 15px;
+}
+/*FILAS TEXT*/
+td.text{
+    padding: 10px;
+}
+/*FILAS TD*/
+td{
+    font-size: 25px;
+    
+}
+/*ENLACES*/
+td a{
+    display: flex;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+
+
+
