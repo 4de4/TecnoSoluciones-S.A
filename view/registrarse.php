@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="form">
-        <form action="../Register/procesoregistro.php" method="POST">
+        <form action="../controllers/RegistrarController.php" method="POST">
             <h1>Registrarse</h1>
 
             <div class="mensaje">

@@ -29,7 +29,7 @@ if (isset($_POST['Usuario']) && isset($_POST['Clave'])) {
             $query = $con->query($sql);*/
 
         $guardar = new Usuario();
-        $row = $guardar->Login($usuario, $clave);
+        $row = $guardar->Login($usuario);
         if ($row) {
             if ($row['clave'] === $clave) {
                 $_SESSION['user'] = $row['user'];
