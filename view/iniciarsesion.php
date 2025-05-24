@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="form">
-        <form action="../controllers/UsuarioController.php" method="POST">
+        <form action="crud.php?c=usuario&a=iniciar" method="POST">
             <h1>Iniciar Sesion</h1>
 
             <div class="mensaje">
