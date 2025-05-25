@@ -1,56 +1,88 @@
-*{
+body{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-    background-color: rgb(206, 216, 236);
-    /*background: url('../img/fondo azul.jpg') no-repeat;
     background-size: cover;
-    background-position: center;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/fondoMorado.png');
+    min-height: 100vh;
 }
-/**/
 h2{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 50px;
+    font-family: Arial;
+    margin-top: 30px;
+    color: rgb(196, 8, 196);
 }
+
 .tablecliente{
-    background: violet;
-
-    border: 2px solid black;
-    border-radius: 10px;
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #b477cc;
+    box-shadow: 0 2px 5px;
+    border-radius: 8px;
+    overflow: hidden;
 }
-
-.tablecliente th{
-    font-size: 30px;
-}
-
 /*CABEZERA*/
 .cab{
-    padding: 10px 15px;
+    background-color: rgba(171, 82, 245, 0.705);
+    color: rgb(157, 47, 190);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+
 }
 /*FILAS TEXT*/
 td.text{
-    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: arial; 
+    margin-top: 30px;
+    color: #8943b1;
 }
 /*FILAS TD*/
 td{
-    font-size: 25px;
-    
+    font-size: 15px; 
 }
 /*ENLACES*/
 td a{
     display: flex;
     justify-content: center;
-
+    background-color: rgb(148, 82, 223);
+    text-decoration: none;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 4px;
+    color: white;
     text-decoration: none;
 }
-
-
+.btn{
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.btn-warning{
+    background-color: rgba(149, 90, 216, 0.644)
+}
+.btn-warning:hover{
+    background-color: rgba(173, 31, 230, 0.514);
+}
+.btn-danger{
+    background-color: rgba(149, 90, 216, 0.644)
+}
+.btn-danger:hover{
+    background-color: rgba(173, 31, 230, 0.514);
+}
 
 

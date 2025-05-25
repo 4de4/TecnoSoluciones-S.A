@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clientes_nuevo.php</title>
+    <link rel="stylesheet" href="agregar.css?v=3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-		<h2><?php echo $data["titulo"]; ?></h2>
+		<h2 class="form-title"><?php echo $data["titulo"]; ?></h2>
             <!--El atributo autocomplete="off" en HTML se usa en formularios o campos de entrada (<input>) 
             para desactivar la función de autocompletado del navegador. Cuando se establece este atributo 
             en un campo de formulario, el navegador no sugiere valores almacenados previamente para ese 
@@ -39,8 +40,8 @@
                 <label for="color">Direccion:</label>
                 <input type="text" class="form-control" id="direccion" name="direccion" />
             </div>
-		
-            <button id="guardar" name="guardar" type="submit" class="btn btn-primary">Guardar</button>
+            <div class="form-container">
+            <button id="guardar" name="guardar" type="submit" class="btn-container">Guardar</button>
 				
         </form>
     </div>

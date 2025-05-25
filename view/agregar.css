@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/atardecerr.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+.container{
+    background-color: rgba(170, 74, 194, 0.95);
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 4, 20, 0.2);
+}
+.form-title{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgba(165, 8, 185, 0.836);
+    font-family: Arial;
+}
+.form-group{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-group input{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ce1195;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.form-container{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+.btn-container{
+    background-color: #bd4bb7;
+    color: white;
+    border: none;
+    padding: 12px 100px;
+    display: flex;
+    justify-content: center; 
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: monospace;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(3, 58, 83, 0.2);
+}
+.btn-container:hover{
+    background-color: #ce1195;
+}
