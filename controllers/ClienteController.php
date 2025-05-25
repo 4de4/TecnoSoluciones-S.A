@@ -11,6 +11,12 @@ class ClienteController {
         require_once "../view/clientes/clientes.php";		
     }
 
+	public function PDF(){
+		$cliente = new Cliente_model();
+        $data["cliente"] = $cliente->get_clientes();
+        require_once(__DIR__ . '/../view/fpdf/PruebaV.php');
+	}
+
     //FUNCION NUEVO()
     public function nuevo(){			
 		$data["titulo"] = "Clientes";

@@ -46,6 +46,9 @@
             </div>
         </tbody>					
 	</table>
+    <div>
+        <a href="crud.php?c=cliente&a=PDF" >Generar Reporte</a>
+    </div>
     </center>
 </body>
 </html>
