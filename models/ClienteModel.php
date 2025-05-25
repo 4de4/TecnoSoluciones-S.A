@@ -13,7 +13,7 @@ class Cliente_model {
 	{
             $sql = "SELECT * FROM cliente";
             $resultado = $this->db->query($sql);
-//La función fetch_assoc() en PHP se utiliza para obtener una fila 
+            //La función fetch_assoc() en PHP se utiliza para obtener una fila 
             //de resultados de una consulta SQL como un arreglo asociativo, donde 
             //cada columna de la fila se convierte en una clave del arreglo, con 
             //el nombre de la columna como clave y el valor de la celda como el 

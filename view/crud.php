@@ -11,7 +11,7 @@
         require_once "../config/define.php";
         require_once "../core/routes.php";
         require_once "../config/databas.php";
-        require_once "../controllers/ClienteController.php";
+        
         //La función isset en PHP es una herramienta útil para verificar si una 
             //variable existe y no es NULL.
             // c significa el controlador y a significa la accion que realiza el usuario
